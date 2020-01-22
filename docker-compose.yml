@@ -1,0 +1,10 @@
+version: '3'
+services:
+  aip_practic1:
+    build: . #同じdirのdockerfile
+    ports:
+      - "8000:80"
+#コマンド
+#docker-compose up --build -rmi all
+#buildはもしすでにイメージがあるが、それが不具合のあるときにリビルドする
+#rmi = remove imageの略
